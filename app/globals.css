@@ -21,7 +21,7 @@ body {
 }
 
 h1 {
-  @apply text-5xl text-primary font-bold mb-12;
+  @apply text-5xl text-primary font-bold mb-12 leading-snug;
 }
 
 h2 {

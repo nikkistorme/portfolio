@@ -59,34 +59,5 @@
     ],
     "repo": "https://github.com/nikkistorme/shelf",
     "url": "https://shelf-nikkistorme.vercel.app/"
-  },
-  {
-    "title": "Dashboard",
-    "description": "Mock dashboard demonstrating a variety of ways to display information to users.",
-    "tech": [],
-    "imgs": [
-      {
-        "alt": "Dashboard on Desktop",
-        "srcset": [
-          {
-            "src": "/project-images/dashboard-desktop.png",
-            "width": 2880,
-            "height": 1528
-          }
-        ]
-      },
-      {
-        "alt": "Dashboard on Mobile",
-        "srcset": [
-          {
-            "src": "/project-images/dashboard-mobile.png",
-            "width": 2880,
-            "height": 1528
-          }
-        ]
-      }
-    ],
-    "repo": "https://github.com/nikkistorme/techdegree-project-7",
-    "url": "https://nikkistorme.github.io/dashboard/dashboard"
   }
 ]

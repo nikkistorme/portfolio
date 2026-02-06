@@ -1,4 +1,5 @@
 import HighPerformanceNextJs from '@/components/CaseStudies/HighPerformanceNextJs.mdx'
+import Header from '@/components/Header/Header'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -8,8 +9,11 @@ export const metadata: Metadata = {
 
 export default function HighPerformanceNextJsPlatformMigration() {
   return (
-    <main id="main" tabIndex={-1} className="flex flex-col max-w-screen-xl px-5 my-6 md:my-14 mx-auto">
-      <HighPerformanceNextJs />
-    </main>
+    <>
+      <Header />
+      <main id="main" tabIndex={-1} className="flex flex-col max-w-screen-xl px-5 my-6 md:my-14 mx-auto">
+        <HighPerformanceNextJs />
+      </main>
+    </>
   )
 }
