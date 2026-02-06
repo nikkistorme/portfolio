@@ -24,7 +24,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${openSans.className} text-body bg-background`}>
         <SkipToMainLink />
-        <Header />
         {children}
         <Analytics />
       </body>
