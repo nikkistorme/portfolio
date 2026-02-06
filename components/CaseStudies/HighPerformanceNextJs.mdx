@@ -1,0 +1,92 @@
+# Case Study: High-Performance Next.js Platform Migration
+
+## Overview
+
+I served as Lead Front End Engineer on a large-scale migration for a travel insurance company transitioning from a legacy Sitecore implementation to a modern, headless Next.js architecture powered by ButterCMS. The project focused on improving performance, accessibility, and frontend flexibility, while enabling content authors to continue building complex pages at scale.
+
+**Role**: Lead Front End Engineer / Technical Architect
+
+**Stack**: Next.js (App Router), React, ButterCMS
+
+## The Problem
+
+The client’s existing Sitecore site had grown highly complex over time, with:
+
+- Heavy CMS-driven page composition
+- Over 1,000 blog posts and content pages
+- Multiple page templates and layouts
+- Poor performance and failing Core Web Vitals
+- Limited architectural flexibility for the internal engineering team
+
+Pages loaded slowly, interaction latency was high, and the existing architecture made it difficult to improve performance without major rework. The client wanted to move to a headless CMS approach that would give their engineering team control over frontend architecture while preserving robust CMS authoring capabilities.
+
+## Constraints & Requirements
+
+- Migrate a large, content-heavy marketing site (~1,000 blog posts)
+- Preserve flexible, author-driven page building
+- Support multiple page types and layouts
+- Improve Core Web Vitals and perceived performance
+- Maintain SEO, accessibility, and content standards
+- Balance server-side and client-side rendering intentionally
+- Enable other developers to contribute within a consistent architecture
+
+## The Solution
+
+### Frontend Architecture & Rendering Strategy
+
+I designed and implemented a Next.js application using the App Router, integrating ButterCMS as a headless content source. A key architectural decision was adopting a hybrid rendering strategy:
+
+- **Server-side rendering (SSR)** for the majority of content to improve load time, SEO, and Core Web Vitals
+- **Client-side rendering (CSR)** only for highly interactive components (e.g., accordions, sliders, stateful UI)
+
+This approach ensured fast initial loads while keeping interactivity responsive and intentional.
+
+As the lead engineer, I:
+
+- Established the core Next.js architecture and project structure
+- Led an architecture walkthrough and demo for the other developers before implementation began
+- Reviewed code throughout the project, providing guidance on code quality, accessibility, and rendering tradeoffs
+
+### CMS-Driven Page Composition
+
+To support non-technical content authors, I built:
+
+- 30+ reusable, production-ready React components
+- Custom templates for core page types (homepage, solution pages, landing pages, blog posts, blog listings)
+- A dynamic routing system using the Next.js App Router that:
+  - Generated pages based on CMS-defined URL paths
+  - Mapped page types to appropriate layouts automatically
+  - Allowed authors to create pages with custom URLs without engineering involvement
+
+Each component was designed to balance:
+
+- **Stability** (protecting layout, performance, and accessibility)
+- **Flexibility** (layout variants, styling options, and content configuration)
+
+### Performance, SEO & UX Optimization
+
+Performance was a primary focus throughout development. I emphasized:
+
+- Careful separation of server-rendered and client-rendered components
+- Image optimization and responsive image handling
+- Minimizing unnecessary JavaScript and re-renders
+- Ensuring that individual components remained lightweight so their combined usage would not degrade performance
+- Adding skeleton loaders and loading indicators for client-rendered components to improve perceived performance
+
+SEO and accessibility considerations were built into the architecture, along with clear guidelines for content authors to help maintain consistent structure, semantics, and performance as new content was added.
+
+## Outcome
+
+- Successfully migrated a large Sitecore site to a Next.js + headless CMS architecture
+- Improved Core Web Vitals from failing to passing, with Largest Contentful Paint ~2000ms
+- Delivered a flexible CMS-driven frontend with 30+ reusable components
+- Significantly improved perceived performance; the client reported the site “felt much faster”
+- Received strong client feedback and was requested again for a subsequent project
+
+## What This Demonstrates
+
+- Lead-level ownership of Next.js architecture and rendering strategy
+- Strong judgment around performance, SEO, and UX tradeoffs
+- Ability to translate design-ready Figma work into polished, production-ready UI
+- Experience setting frontend standards and mentoring other developers
+- Comfort leading complex, high-impact frontend work end-to-end

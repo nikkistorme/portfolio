@@ -12,9 +12,9 @@ export default function Socials({ links }: { links: Link[] }): React.JSX.Element
   }
 
   return (
-    <ul className="flex gap-5 opacity-90">
+    <ul className="flex gap-5 opacity-90 list-none mb-0 pl-0">
       {links?.map((link: Link, idx: number) => (
-        <li key={idx}>
+        <li key={idx} className="mb-0">
           <Link
             className="relative flex items-center size-8"
             href={link.href}

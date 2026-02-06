@@ -20,6 +20,40 @@ body {
   color: rgb(var(--foreground-rgb));
 }
 
+h1 {
+  @apply text-5xl text-primary font-bold mb-12;
+}
+
+h2 {
+  @apply text-4xl font-bold mb-8;
+}
+
+h3 {
+  @apply text-2xl font-semibold mb-4;
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover {
+  @apply text-primary underline;
+}
+
+p {
+  @apply mb-6;
+}
+
+ul {
+  @apply list-disc list-inside mb-6 pl-4;
+}
+
+ul > li {
+  @apply mb-2;
+}
+
+li > ul {
+  @apply pl-6 mt-2 mb-0;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

@@ -1,0 +1,23 @@
+[
+  {
+    "title": "High-Performance Next.js Platform Migration",
+    "summary": "Led the frontend architecture and migration of a large, content-heavy marketing site from Sitecore to a modern Next.js platform, dramatically improving performance, Core Web Vitals, and authoring flexibility.",
+    "role": "Lead Front End Engineer / Technical Architect",
+    "tags": ["Next.js", "Performance Optimization", "Headless CMS"],
+    "link": "/case-studies/high-performance-nextjs-platform-migration"
+  },
+  {
+    "title": "Accessible Enterprise Mega Menu",
+    "summary": "Led the architecture and implementation of a WCAG-compliant mega menu with nested interactive components, balancing complex UX requirements with CMS and accessibility constraints.",
+    "role": "Senior Frontend Engineer",
+    "tags": ["HubSpot CMS", "Accessibility", "Complex UI"],
+    "link": "/case-studies/accessible-enterprise-mega-menu"
+  },
+  {
+    "title": "WordPress → HubSpot Migration",
+    "summary": "Served as technical architect for a large-scale CMS migration, defining theme architecture, migration strategy, accessibility standards, and performance guidelines.",
+    "role": "Technical Architect",
+    "tags": ["HubSpot", "SEO", "Platform Migration"],
+    "link": "/case-studies/wordpress-to-hubspot-migration"
+  }
+]

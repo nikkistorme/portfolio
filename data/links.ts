@@ -1,6 +1,14 @@
-import { EmailIcon } from "@/components/Icons";
-
 const links = {
+  "caseStudies": {
+    "href": "/case-studies",
+    "target": "",
+    "rel": ""
+  },
+  "resume": {
+    "href": "/files/Nikki_Bright_Resume.pdf",
+    "target": "_blank",
+    "rel": "noopener noreferrer"
+  },
   "blog": {
     "href": "https://blog.nikkibright.com",
     "target": "_blank",
@@ -45,16 +53,22 @@ const links = {
 
 export const mainNavLinks = [
   {
-    "href": links.posts.href,
-    "target": links.posts.target,
-    "rel": links.posts.rel,
-    "label": "Blog"
+    "href": "/",
+    "target": "",
+    "rel": "",
+    "label": "Home"
   },
   {
-    "href": links.projects.href,
-    "target": links.projects.target,
-    "rel": links.projects.rel,
-    "label": "Projects"
+    "href": links.caseStudies.href,
+    "target": links.caseStudies.target,
+    "rel": links.caseStudies.rel,
+    "label": "Case Studies"
+  },
+  {
+    "href": links.resume.href,
+    "target": links.resume.target,
+    "rel": links.resume.rel,
+    "label": "Resume"
   }
 ];
 

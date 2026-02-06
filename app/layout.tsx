@@ -11,8 +11,8 @@ const openSans = Open_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Nikki Bright | UX Developer",
-  description: "Nikki Bright is an accessibility-focused front-end web developer working remotely out of the U.S.",
+  title: "Nikki Bright",
+  description: "Nikki Bright is an accessibility-focused senior software developer working remotely out of the U.S.",
 };
 
 export default function RootLayout({
